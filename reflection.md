@@ -39,9 +39,9 @@ Additinally, the new game button doesnt refresh the state of the game.
 - In your own words, explain why the secret number kept changing in the original app.
   - in the code, the logic changes the type of the secret number from int to str back and forth for every guess. on odd guess the secret was int, on even guess the secret was str
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-  -
+  - streamnlit refreshes the state on every interaction with the application, so we need to make sure keep the secret number in memory so its persistant across states. If we dont, then the secret number is lost with every interaction
 - What change did you make that finally gave the game a stable secret number?
-  - 
+  - i remove the type conversion of the secret number.
 
 ---
 
@@ -50,4 +50,6 @@ Additinally, the new game button doesnt refresh the state of the game.
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
+  - i thought my use of AI was well done for this project
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+  - is forced me to always git commit so i can always go back to a working state of the codebase
